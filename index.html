@@ -1,1 +1,30 @@
-<h1>Hello!</h1>
+<DOCTYPE! HTML>
+<html>
+
+<head>
+  <title>my-project</title>
+</head>
+  
+<body>  
+<h1 id="test">Hello!</h1>
+</body>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB4AQ5OAJpaFeRDnQFcBlvz0aaVkx51Tbg",
+    authDomain: "my-project-2e5d5.firebaseapp.com",
+    databaseURL: "https://my-project-2e5d5.firebaseio.com",
+    projectId: "my-project-2e5d5",
+    storageBucket: "",
+    messagingSenderId: "77108976108"
+  };
+  firebase.initializeApp(config);
+  
+  var test = document.getElementById("test");
+  var dbRef = firebase.database().ref().child("text");
+  dbRef.on("value", snap => test.innerText = snap.val());
+</script>
