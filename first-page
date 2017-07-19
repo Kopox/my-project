@@ -1,9 +1,9 @@
 <DOCTYPE! HTML>
 <html>
 <head>
- <title>Page 1</title>
+ <title>First page</title>
 </head>
 <body>
- <p>This is page 1</p>
+ <p>This is first page</p>
  <a href="https://kopox.github.io/my-project/">Go back to index</a>
 </body>
